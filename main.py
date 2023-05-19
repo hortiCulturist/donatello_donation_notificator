@@ -5,7 +5,7 @@ import asyncio
 from telegram import Bot
 
 url = 'https://donatello.to/api/v1/donates'
-headers = {'X-Token': '89dc8fd1a842300f562554c7fb159e21'}
+headers = {'X-Token': ''}
 db.start_db()
 
 telegram_token = '6121333590:AAF6Dhx9GSZneix75kruazW7BuwmckGHiNg'
