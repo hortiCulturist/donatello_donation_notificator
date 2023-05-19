@@ -8,8 +8,8 @@ url = 'https://donatello.to/api/v1/donates'
 headers = {'X-Token': ''}
 db.start_db()
 
-telegram_token = '6121333590:AAF6Dhx9GSZneix75kruazW7BuwmckGHiNg'
-chat_id = '-1001538701484'
+telegram_token = ''
+chat_id = ''
 
 
 async def send_to_telegram(message):
