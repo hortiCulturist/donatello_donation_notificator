@@ -8,8 +8,8 @@ url = 'https://donatello.to/api/v1/donates'
 headers = {'X-Token': '89dc8fd1a842300f562554c7fb159e21'}
 db.start_db()
 
-telegram_token = ''
-chat_id = ''
+telegram_token = '6121333590:AAF6Dhx9GSZneix75kruazW7BuwmckGHiNg'
+chat_id = '-1001538701484'
 
 
 async def send_to_telegram(message):
@@ -17,11 +17,9 @@ async def send_to_telegram(message):
     await bot.send_message(chat_id=chat_id, text=message, parse_mode='HTML')
 
 
-response = requests.get(url, headers=headers)
-
-
 async def main():
     while True:
+        response = requests.get(url, headers=headers)
         if response.status_code == 200:
             data = response.json()
             for item in data['content']:
